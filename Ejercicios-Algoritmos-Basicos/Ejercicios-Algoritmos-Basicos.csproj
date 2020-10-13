@@ -69,11 +69,20 @@
   <ItemGroup>
     <Content Include="assets\css\main.css" />
     <Content Include="assets\img\logo-400x140.png" />
+    <Content Include="ecuacion.aspx" />
     <Content Include="Global.asax" />
     <Content Include="index.aspx" />
+    <Content Include="promedio.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ecuacion.aspx.cs">
+      <DependentUpon>ecuacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ecuacion.aspx.designer.cs">
+      <DependentUpon>ecuacion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -83,6 +92,13 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="promedio.aspx.cs">
+      <DependentUpon>promedio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="promedio.aspx.designer.cs">
+      <DependentUpon>promedio.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Ejercicios_Algoritmos_Basicos.index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="promedio.aspx.cs" Inherits="Ejercicios_Algoritmos_Basicos.promedio" %>
 
 <!DOCTYPE html>
 
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./assets/css/main.css" runat="server">
 </head>
 <body>
-    <section class="hero is-info is-fullheight">
+<section class="hero is-info is-fullheight">
         <div class="hero-head">
             <nav class="navbar">
                 <div class="container">
@@ -80,8 +80,5 @@
             </div>
 
     </section>
-
-
-
 </body>
 </html>
