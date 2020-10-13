@@ -15,22 +15,13 @@ namespace Ejercicios_Algoritmos_Basicos
     {
 
         /// <summary>
-        /// Control link1.
+        /// Control logo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlLink link1;
-
-        /// <summary>
-        /// Control link2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlLink link2;
+        protected global::System.Web.UI.WebControls.Image logo;
 
         /// <summary>
         /// Control form1.
