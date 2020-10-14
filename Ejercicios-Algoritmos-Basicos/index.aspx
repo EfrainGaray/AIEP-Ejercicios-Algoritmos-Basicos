@@ -54,7 +54,7 @@
                                 </a>
                             </span>
                             <span class="navbar-item">
-                                <a class="button is-white is-outlined" href="https://github.com/EfrainGaray/AIEP-Ejercicios-Algoritmos-Basicos">
+                                <a class="button is-white is-outlined"  href="https://github.com/EfrainGaray/AIEP-Ejercicios-Algoritmos-Basicos">
                                     <span class="icon">
                                         <i class="fa fa-github"></i>
                                     </span>
@@ -65,23 +65,53 @@
                     </div>
                 </div>
             </nav>
-            </div>
+        </div>
 
-            <div class="hero-body">
-                <div class="container has-text-centered">
-                    <div class="column is-6 is-offset-3" id="form-principal">
-                    <form id="form1" runat="server">
-                            <div>
-                                hola
+        <div class="hero-body">
+            <div class="container">
+
+                <div class="columns is-centered">
+
+                    <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+                    
+                        <form runat="server" class="box">
+                            <div class="field">
+                                <label for="" class="label">Email</label>
+                                <div class="control has-icons-left">
+                                    <asp:TextBox ID="txtEmail" runat="server" CssClass="input"></asp:TextBox>
+                                    <span class="icon is-small is-left">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="" class="label">Password</label>
+                                <div class="control has-icons-left">
+                                 
+                                    <asp:TextBox ID="txtPasword" runat="server" CssClass="input"></asp:TextBox>
+                                    <span class="icon is-small is-left">
+                                        <i class="fa fa-lock"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="chkRememberme" class="checkbox">
+                                    <asp:CheckBox ID="chkRememberme" runat="server" />
+                                    Remember me
+                                </label>
+                            </div>
+                            <div class="field">
+                                <asp:Button ID="btnSend" runat="server" OnClick="btnSend_Click" Text="Ingresar" CssClass="button is-succes" />
+                            </div>
+                            <div id="result" runat="server">
+                              
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-
+        </div>
     </section>
-
-
 
 </body>
 </html>
