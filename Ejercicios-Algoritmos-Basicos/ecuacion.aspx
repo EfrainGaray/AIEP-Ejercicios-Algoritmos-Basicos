@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <link rel="stylesheet" href="./assets/css/main.css" runat="server">
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
   <section class="hero is-info is-fullheight">
@@ -67,17 +67,33 @@
             </nav>
             </div>
 
-            <div class="hero-body">
-                <div class="container has-text-centered">
-                    <div class="column is-6 is-offset-3" id="form-principal">
-                    <form id="form1" runat="server">
-                            <div>
-                                hola
+              <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+                        <form runat="server" id="form3" class="box">
+                            <div class="field">
+                                <label for="" class="label">Ingrese valor de x</label>
+                                <div class="control has-icons-left">
+                                    <asp:TextBox ID="txtX" runat="server"  CssClass="input pl-130"></asp:TextBox>
+                                    <span class="icon is-small is-left" style="width: 130px; font-size: 15px;">
+                                        Y= 3X<sup>2</sup> + 7X - 15
+                                    </span>
+                                </div>
+                            </div>
+                         
+                           
+                            <div class="field">
+                                <asp:Button ID="btnSend" runat="server" OnClick="btnSend_Click" Text="Calcular" CssClass="button is-succes" />
+                            </div>
+                            <div id="result" runat="server">
+                              
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
+        </div>
 
     </section>
 
