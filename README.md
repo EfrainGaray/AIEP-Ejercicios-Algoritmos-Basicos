@@ -1,5 +1,5 @@
 # DEMO
-[MIT](https://ejercicios-algoritmos-basicos20201014131134.azurewebsites.net/index.aspx)
+[example](https://ejercicios-algoritmos-basicos20201014131134.azurewebsites.net/index.aspx)
 
 
 # TALLER DE APLICACIONES PARA INTERNET EN NET
