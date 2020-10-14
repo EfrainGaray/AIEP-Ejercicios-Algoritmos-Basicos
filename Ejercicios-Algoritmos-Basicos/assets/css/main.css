@@ -11,8 +11,7 @@
 .hero .navbar {
     background: rgba(255,255,255,0.4);
 }
-#form-principal {
-    background: rgba(255,255,255,0.4);
-    border-radius:10px;
-    padding:50px;
+#form3 {
+    background:red !important;
 }
+
