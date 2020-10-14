@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./assets/css/main.css" runat="server">
 </head>
 <body>
-<section class="hero is-info is-fullheight">
+    <section class="hero is-info is-fullheight">
         <div class="hero-head">
             <nav class="navbar">
                 <div class="container">
@@ -65,19 +65,52 @@
                     </div>
                 </div>
             </nav>
-            </div>
+        </div>
 
-            <div class="hero-body">
-                <div class="container has-text-centered">
-                    <div class="column is-6 is-offset-3" id="form-principal">
-                    <form id="form1" runat="server">
-                            <div>
-                                hola
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+                        <form runat="server" id="form" class="box">
+                            <div class="field">
+                                <label for="" class="label">Ingrese su nota</label>
+                                <div class="control has-icons-left">
+                                    <asp:TextBox ID="txtScore1" runat="server" CssClass="input"></asp:TextBox>
+                                    <span class="icon is-small is-left">
+                                        <i class="fa fa-angle-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="" class="label">Ingrese su nota</label>
+                                <div class="control has-icons-left">
+
+                                    <asp:TextBox ID="txtScore2" runat="server" CssClass="input"></asp:TextBox>
+                                    <span class="icon is-small is-left">
+                                        <i class="fa fa-angle-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="" class="label">Ingrese su nota</label>
+                                <div class="control has-icons-left">
+
+                                    <asp:TextBox ID="txtScore3" runat="server" CssClass="input"></asp:TextBox>
+                                    <span class="icon is-small is-left">
+                                        <i class="fa fa-angle-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <asp:Button ID="btnSend" runat="server" OnClick="btnSend_Click" Text="Calcular" CssClass="button is-succes" />
+                            </div>
+                            <div id="result" runat="server">
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
+        </div>
 
     </section>
 </body>
