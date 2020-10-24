@@ -14,6 +14,7 @@ namespace Ejercicios_Algoritmos_Basicos
             txtX.Attributes.Add("style", "padding-left:130px");
             txtX.Attributes.Add("type", "number");
             txtX.Attributes.Add("required", "required");
+            Session["menuactive"] = "ecuacion";
         }
 
         protected void btnSend_Click(object sender, EventArgs e)
