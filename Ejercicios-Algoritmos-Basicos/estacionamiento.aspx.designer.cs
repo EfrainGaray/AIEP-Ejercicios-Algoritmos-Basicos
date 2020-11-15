@@ -19,7 +19,11 @@ namespace Ejercicios_Algoritmos_Basicos {
 		
 		protected System.Web.UI.HtmlControls.HtmlForm form;
 		
-		protected System.Web.UI.WebControls.TextBox txtNumbers;
+		protected System.Web.UI.WebControls.TextBox txtName;
+		
+		protected System.Web.UI.WebControls.TextBox txtPpu;
+		
+		protected System.Web.UI.WebControls.TextBox txtHour;
 		
 		protected System.Web.UI.WebControls.Button btnSend;
 		
