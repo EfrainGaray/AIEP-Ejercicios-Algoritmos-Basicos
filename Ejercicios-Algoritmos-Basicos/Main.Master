@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main.css" runat="server">
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -29,41 +29,42 @@
                             <span></span>
                         </span>
                     </div>
-                     <%:Page.Title %>
+                     
                     <div id="navbarMenu" class="navbar-menu">
                         <div class="navbar-end">
                             <span class="navbar-item">
-                                <a class="button is-white is-outlined  <%:Page.Title=="index"?"active":""%>" href="index.aspx">
+                                <a class="button is-white is-outlined  <%:Page.Title=="imc"?"active":""%>" href="imc.aspx">
                                     <span class="icon">
-                                        <i class="fa fa-user"></i>
+                                        <i class="fa fa-user-md"></i>
                                     </span>
-                                    <span>Login</span>
+                                    <span>Calcula tu IMC</span>
                                 </a>
                             </span>
                             <span class="navbar-item">
-                                <a class="button is-white is-outlined  <%:Page.Title=="promedio"?"active":""%>" href="promedio.aspx">
+                                <a class="button is-white is-outlined  <%:Page.Title=="min_max"?"active":""%>" href="min_max.aspx">
                                     <span class="icon">
                                         <i class="fa fa-graduation-cap"></i>
                                     </span>
-                                    <span>Calcula Promedio</span>
+                                    <span>Suma min && max</span>
                                 </a>
                             </span>
                             <span class="navbar-item ">
-                                <a class="button is-white is-outlined <%:Page.Title=="ecuacion"?"active":""%>" href="ecuacion.aspx">
+                                <a class="button is-white is-outlined <%:Page.Title=="conversor"?"active":""%>" href="conversor.aspx">
                                     <span class="icon">
                                         <i class="fa fa-book"></i>
                                     </span>
-                                    <span>Ecuación Cuadrática</span>
+                                    <span>Conversor</span>
                                 </a>
                             </span>
-                            <span class="navbar-item">
-                                <a class="button is-white is-outlined" href="https://github.com/EfrainGaray/AIEP-Ejercicios-Algoritmos-Basicos">
+                            <span class="navbar-item ">
+                            <a class="button is-white is-outlined <%:Page.Title=="estacionamiento"?"active":""%>" href="estacionamiento.aspx">
                                     <span class="icon">
-                                        <i class="fa fa-github"></i>
+                                        <i class="fa fa-car"></i>
                                     </span>
-                                    <span>View Source</span>
+                                    <span>Estacionamiento</span>
                                 </a>
                             </span>
+                         
                         </div>
                     </div>
                 </div>

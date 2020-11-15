@@ -16,3 +16,6 @@ a.active {
     border-color: #fff !important;
     color: #0a0a0a !important;
 }
+.center {
+    text-align: center;
+}
